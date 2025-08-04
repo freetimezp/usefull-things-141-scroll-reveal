@@ -92,28 +92,28 @@ img {
 }
 
 .item:nth-child(1) .item-img {
-    background: #e14434;
+    background: rgba(225, 68, 52, 0.8);
 }
 .item:nth-child(2) .item-img {
-    background: #1378bb;
+    background: rgba(19, 120, 187, 0.8);
 }
 .item:nth-child(3) .item-img {
-    background: #eb872f;
+    background: rgba(235, 135, 47, 0.8);
 }
 .item:nth-child(4) .item-img {
-    background: #095741;
+    background: rgb(9, 87, 65, 0.8);
 }
 .item:nth-child(5) .item-img {
-    background: #6643e5;
+    background: rgba(102, 67, 229, 0.8);
 }
 .item:nth-child(6) .item-img {
-    background: #d36c61;
+    background: rgba(211, 108, 97, 0.8);
 }
 .item:nth-child(7) .item-img {
-    background: #0b55a0;
+    background: rgba(11, 85, 160, 0.8);
 }
 .item:nth-child(8) .item-img {
-    background: #d2900c;
+    background: rgba(210, 144, 12, 0.8);
 }
 
 .item:nth-child(1),

@@ -11,12 +11,14 @@ gsap.utils.toArray(".item").forEach((item, index) => {
         {
             clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
             scale: 1,
+            opacity: 0.6,
         },
         {
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
             ease: "power1.out",
             scale: 1.25,
             duration: 2,
+            opacity: 1,
             scrollTrigger: {
                 trigger: item,
                 start: "center bottom",
