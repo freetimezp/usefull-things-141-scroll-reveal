@@ -18,12 +18,17 @@ img {
 
 .counter {
     position: fixed;
-    padding: 2em;
-    top: 0;
-    left: 0;
+    width: 75px;
+    height: 75px;
+    background: rgba(255, 255, 255, 0.65);
+    top: 1em;
+    left: 1em;
+    border-radius: 100%;
     color: #000;
     display: flex;
+    justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
 .counter p {
@@ -43,9 +48,22 @@ img {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: rgb(250, 186, 74);
-    background: linear-gradient(0deg, rgba(250, 186, 74, 1) 0%, rgba(252, 176, 69, 0) 100%);
+    background: #d51111;
+    background: linear-gradient(0deg, #d51111 0%, rgba(252, 176, 69, 0) 100%);
     z-index: -1;
+}
+
+.bg-color::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.2;
 }
 
 .items {
@@ -56,12 +74,9 @@ img {
 
 .item {
     width: 40%;
+    max-height: 100vh;
+    overflow: hidden;
     margin-bottom: 4em;
-}
-
-.item-info {
-    padding: 0.5em 0;
-    text-transform: uppercase;
 }
 
 .item-img {
@@ -70,34 +85,35 @@ img {
 
 .item-img img {
     will-change: transform;
-    transform: scale(1.25);
+    transform: scale(1);
+    object-fit: cover;
+    object-position: center 20%;
     clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
 }
 
-
 .item:nth-child(1) .item-img {
-    background: #faba4a;
+    background: #e14434;
 }
 .item:nth-child(2) .item-img {
-    background: #bb2a26;
+    background: #1378bb;
 }
 .item:nth-child(3) .item-img {
-    background: #7e7d65;
+    background: #eb872f;
 }
 .item:nth-child(4) .item-img {
-    background: #989682;
+    background: #095741;
 }
 .item:nth-child(5) .item-img {
-    background: #5e4036;
+    background: #6643e5;
 }
 .item:nth-child(6) .item-img {
-    background: #e33b12;
+    background: #d36c61;
 }
 .item:nth-child(7) .item-img {
-    background: #252d1a;
+    background: #0b55a0;
 }
 .item:nth-child(8) .item-img {
-    background: #b04c0d;
+    background: #d2900c;
 }
 
 .item:nth-child(1),
@@ -119,21 +135,3 @@ img {
     position: relative;
     left: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
